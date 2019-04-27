@@ -10,10 +10,9 @@ if (!function_exists('zh_seo_setup')) :
     }
 endif; // zh_seo_setup
 add_action('after_setup_theme', 'zh_seo_setup');
-
 function zh_seo_scripts()
 {
-    $timestamp = '2019031311';
+    $timestamp = '201904262215';
     wp_enqueue_script('zh-seo-script', get_template_directory_uri() . '/js/index.js', array(), $timestamp, true);
     $adminbar = is_admin_bar_showing();
     wp_localize_script('zh-seo-script', 'libreadminbar', array($adminbar));
