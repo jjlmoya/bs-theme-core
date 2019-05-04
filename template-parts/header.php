@@ -5,7 +5,7 @@ $image->imageModifier = 'a-image l-position--absolute l-position--absolute--cent
 ?>
 <div class="og-logo-inline
     a-bg--mono-0
-    l-flex u-layer-5 u-shadow--bottom l-position">
+    l-flex u-layer-2 u-shadow--bottom l-position">
     <a href="/">
         <?php echo $image->render(); ?>
     </a>
