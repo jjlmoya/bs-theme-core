@@ -10,11 +10,14 @@ $nav = new NavService('footer');
 </footer>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128687860-2"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=<? echo get_option('bs_analytics_ua') ?>"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'UA-128687860-2');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', <? echo get_option('bs_analytics_ua') ?>);
 </script>
