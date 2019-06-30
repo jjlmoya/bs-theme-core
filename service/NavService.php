@@ -57,14 +57,15 @@ class NavService
                          a-pad--x-20 a-pad--mobile-40
                          a-border a-border--light a-border--left a-border--mobile--bottom">
                 <h2 class="a-text a-text--xl  a-text--secondary a-text--m">
-                    Sobre Nosotros
+                    ' . get_option('bs_theme_about_us_label') . '
                 </h2>
                 <nav class="a-text l-flex l-flex--direction-column">
-                    <a href="mailto:info@bonseo.es"
-                       class="a-text a-text--link a-text--underline a-text--xs a-text--secondary a-pad--top-5 a-text--link--secondary">Contacto</a>
+                    <a href="' . get_option('bs_theme_contact_email') . '"
+                       class="a-text a-text--link a-text--underline a-text--xs a-text--secondary a-pad--top-5 a-text--link--secondary">
+                       ' . get_option('bs_theme_contact_email_cta') . '
+                   </a>
                     <p class="a-text a-text--secondary a-text--xs a-pad--y-5">
-                        Dirección: Vilafranca de Bonany,
-                        Mallorca, Islas Baleares, 07250
+                        ' . get_option('bs_theme_contact_address') . '
                     </p>
                 </nav>
            </div>';

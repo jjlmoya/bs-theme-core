@@ -9,7 +9,7 @@ $nav = new NavService('footer');
 <?php
 $trackingCode = get_option('bs_analytics_ua');
 if (!empty($trackingCode)) {
-    ?>e
+    ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=<? echo get_option('bs_analytics_ua') ?>"></script>
     <script>
@@ -21,7 +21,7 @@ if (!empty($trackingCode)) {
 
         gtag('js', new Date());
         gtag('config', <? echo get_option('bs_analytics_ua') ?>);
-    </script>e
+    </script>
     <?
 }
 ?>
