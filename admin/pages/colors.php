@@ -13,20 +13,19 @@ add_action('admin_menu', 'bs_theme_colors_settings_menu');
 
 function bs_theme_setting_theme()
 {
-    $brands = ThemeService::$brands;
+    $themeService = new ThemeService();
     $selectedBrand = get_option('bs_theme_brand');
     ?>
     <select name="bs_theme_brand" id="bs_theme_brand">
         <?
-        foreach ($brands as $brand) {
+        foreach ($themeService->get_brands() as $brand) {
             ?>
-            <option value="<? echo $brand; ?>" <?
-            echo $brand === $selectedBrand ? 'selected=' : '' ?>><? echo $brand; ?></option>
+            <option value="<? echo $brand['id']; ?>" <?
+            echo $brand['id'] === $selectedBrand ? 'selected=' : '' ?>><? echo $brand['name']; ?></option>
             <?
         }
         ?>
     </select>
-
 <?php }
 
 function bs_theme_color_page_setup()

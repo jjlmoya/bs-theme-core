@@ -12,7 +12,7 @@ function bs_theme_setting_analytics()
 {
     ?>
     <input type="text" name="bs_analytics_ua" id="bs_analytics_ua"
-           valueF="<?php echo get_option('bs_analytics_ua'); ?>"/>
+           value="<?php echo get_option('bs_analytics_ua'); ?>"/>
 <?php }
 
 function bs_theme_tracking_page_setup()
