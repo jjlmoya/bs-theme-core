@@ -4,6 +4,7 @@ class ThemeService
 {
 
     private $brands;
+    private $layouts;
 
     public function __construct()
     {
@@ -105,11 +106,26 @@ class ThemeService
                 "name" => "Wood"
             )
         );
+        $this->layouts = array(
+            array(
+                "id" => "l-grid-column",
+                "name" => "[ ] [column] [ ]"
+            ),
+            array(
+                "id" => "l-grid-column-full",
+                "name" => "[    column    ]"
+            )
+        );
     }
 
 
     public function get_brands()
     {
         return $this->brands;
+    }
+
+    public function get_layouts()
+    {
+        return $this->layouts;
     }
 }
