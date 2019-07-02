@@ -112,12 +112,11 @@ class ThemeService
                 "name" => "[ ] [column] [ ]"
             ),
             array(
-                "id" => "l-grid-column-full",
+                "id" => "l-grid-column--full",
                 "name" => "[    column    ]"
             )
         );
     }
-
 
     public function get_brands()
     {
