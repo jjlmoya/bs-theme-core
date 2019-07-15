@@ -5,7 +5,7 @@ require_once get_template_directory(dirname(__FILE__)) . '/service/ThemeService.
 function bs_theme_layout_settings_menu()
 {
 
-    add_theme_page('BS Theme: layout & layout', 'layout & layout', 'manage_options', 'bs_theme_layout', 'bs_theme_layout_page');
+    add_theme_page('BS Theme: Layout & Pages', 'Layout & Pages', 'manage_options', 'bs_theme_layout', 'bs_theme_layout_page');
 
 }
 

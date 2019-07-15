@@ -77,7 +77,7 @@ function bs_theme_footer_page()
 {
     ?>
 
-    <div class="wrap">
+    <div classs="wrap">
         <h1>BS Theme Configuration: Footer</h1>
         <form method="post" action="options.php">
             <?php

@@ -8,6 +8,10 @@
     <meta name="google-site-verification" content="UmQSGMihPdUb0lHaMY5ptFS2u0oQkfK5UGiHwqGG4_U"/>
 </head>
 <body <?php body_class('p-wordpress ' . get_option('bs_theme_brand') . ' '); ?>>
+
+<?php
+get_template_part('template-parts/splash-screen');
+?>
 <?php
 require_once get_template_directory(dirname(__FILE__)) . '/service/ModelService.php';
 new ModelService('ImageOptimizer');
