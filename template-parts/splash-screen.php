@@ -4,6 +4,7 @@
 if (function_exists('the_custom_logo') && !empty(get_option('bs_theme_allow_splash'))) {
     $custom_logo_id = get_theme_mod('custom_logo');
     $image = wp_get_attachment_image_src($custom_logo_id, 'full');
+    if (!empty($image)) {
     ?>
     <section class="og-banner-screen
                 l-position--fixed
@@ -23,5 +24,6 @@ if (function_exists('the_custom_logo') && !empty(get_option('bs_theme_allow_spla
     </section>
 
     <?php
+    }
 }
 ?>

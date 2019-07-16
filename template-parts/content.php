@@ -1,4 +1,4 @@
-<div class="p-default <? echo get_option('bs_theme_layout') ?>">
+<div class="p-wordpress <? echo get_option('bs_theme_layout') ?>">
     <?php
     the_content();
     ?>

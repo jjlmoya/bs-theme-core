@@ -7,7 +7,7 @@
     <?php wp_head(); ?>
     <meta name="google-site-verification" content="UmQSGMihPdUb0lHaMY5ptFS2u0oQkfK5UGiHwqGG4_U"/>
 </head>
-<body <?php body_class('p-wordpress ' . get_option('bs_theme_brand') . ' '); ?>>
+<body <?php body_class(' ' . get_option('bs_theme_brand') . ' '); ?>>
 
 <?php
 get_template_part('template-parts/splash-screen');
