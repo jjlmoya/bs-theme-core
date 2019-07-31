@@ -1,6 +1,3 @@
-<?php
-
-?>
 <div class="og-logo-inline
     a-bg--mono-0
     l-flex u-layer-2 u-shadow--bottom l-position">
