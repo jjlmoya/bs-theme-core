@@ -1,7 +1,7 @@
 <header class="og-logo-inline
     a-bg--mono-0
     l-flex l-grid-column--full
-    u-layer-3 u-shadow--bottom l-position
+    u-layer-4 u-shadow--bottom l-position
     bs_viewport">
     <a href="/">
         <?php
@@ -44,7 +44,7 @@
         </svg>
     </div>
 </header>
-<nav class="og-menu-classic bs_state a-pad l-position a-bg--gradient--light u-layer-4"
+<nav class="og-menu-classic bs_state a-pad l-position a-bg--gradient--light u-layer-3"
      data-close=".og-menu-classic__close, .bs_overflow_layer"
      data-block="true"
      data-active=".og-logo-inline__mobile__menu">
