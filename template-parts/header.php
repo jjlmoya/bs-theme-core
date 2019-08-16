@@ -9,7 +9,7 @@
             $custom_logo_id = get_theme_mod('custom_logo');
             $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
             if (!empty($logo))
-                $image = new ImageOptimizer('', 'Bonseo', 'Bonseo', 'Logo Bonseo');
+                $image = new ImageOptimizer('', 'Logo', 'Logo', 'Logo');
             $image->modifier = 'l-column--1-1 l-position--absolute  a-pad-0';
             $image->fullUrl = esc_url($logo[0]);
             $image->imageModifier = 'a-image l-position--absolute l-position--absolute--center-x og-logo-inline__image';
