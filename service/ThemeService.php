@@ -50,8 +50,16 @@ class ThemeService
                 "name" => "Graylord"
             ),
             array(
+                "id" => "holy",
+                "name" => "Holy"
+            ),
+            array(
                 "id" => "kino",
                 "name" => "Kino"
+            ),
+            array(
+                "id" => "laser",
+                "name" => "Laser"
             ),
             array(
                 "id" => "lavandula",
